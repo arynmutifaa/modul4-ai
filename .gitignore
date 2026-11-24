@@ -1,0 +1,14 @@
+cat > .gitignore <<'EOF'
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+*.db
+uploads/*
+!uploads/.gitkeep
+.DS_Store
+EOF
+echo "3.11" > .python-version
+touch uploads/.gitkeep
+git status
